@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Talks — Anupam Anand Ojha</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <style>
+    /* Date layout: "22 March" on one line (larger), "2026" on next line */
+    .talk-date-col {
+      display: block !important;
+    }
+    .talk-date-col .talk-day {
+      display: inline !important;
+      font-size: 1.4rem !important;
+      letter-spacing: 0 !important;
+      color: var(--ink-mid) !important;
+      font-weight: 500 !important;
+    }
+    .talk-date-col .talk-mon {
+      display: inline !important;
+      font-size: 1.4rem !important;
+      text-transform: none !important;
+      letter-spacing: 0 !important;
+      margin-left: 0.35rem !important;
+      color: var(--ink-mid) !important;
+      font-weight: 500 !important;
+    }
+    .talk-date-col .talk-yr {
+      display: block !important;
+      font-size: 1.05rem !important;
+      margin-top: 0.4rem !important;
+      letter-spacing: 0 !important;
+      color: var(--ink-mid) !important;
+      font-weight: 500 !important;
+    }
+    /* Bigger talk title */
+    .talk-card .talk-title {
+      font-size: 1.4rem !important;
+      line-height: 1.35 !important;
+    }
+    /* Bigger and darker venue and location */
+    .talk-card .talk-venue {
+      font-size: 1.15rem !important;
+      color: var(--ink-mid) !important;
+      font-weight: 500 !important;
+    }
+    .talk-card .talk-loc {
+      font-size: 1.05rem !important;
+      color: var(--ink-mid) !important;
+    }
+    /* Widen date column, narrow the body column */
+    .talk-card {
+      grid-template-columns: 220px 1fr !important;
+    }
+    .talk-date-col {
+      flex: 0 0 220px !important;
+      width: 220px !important;
+      min-width: 220px !important;
+    }
+    /* Reduce white space between page header and first content section */
+    .page-header {
+      padding-bottom: 12px !important;
+    }
+    .section {
+      padding-top: 20px !important;
+      border-top: none !important;
+    }
+    /* MOBILE: stack date above title for readability on phones */
+    @media (max-width: 768px) {
+      .talk-card {
+        grid-template-columns: 1fr !important;
+        gap: 0.4rem !important;
+      }
+      .talk-date-col {
+        flex: 0 0 auto !important;
+        width: auto !important;
+        min-width: 0 !important;
+        display: flex !important;
+        align-items: baseline !important;
+        gap: 0.4rem !important;
+      }
+      .talk-date-col .talk-day,
+      .talk-date-col .talk-mon,
+      .talk-date-col .talk-yr {
+        display: inline !important;
+        font-size: 1rem !important;
+        margin: 0 !important;
+      }
+      .talk-card .talk-title {
+        font-size: 1.15rem !important;
+      }
+      .talk-card .talk-venue {
+        font-size: 0.95rem !important;
+      }
+      .talk-card .talk-loc {
+        font-size: 0.9rem !important;
+      }
+    }
+  </style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <ul class="nav-links">
+      <li><a class="nav-link" href="index.html">Home</a></li>
+      <li><a class="nav-link" href="publications.html">Publications</a></li>
+      <li><a class="nav-link active" href="talks.html">Talks</a></li>
+      <li><a class="nav-link" href="awards.html">Awards</a></li>
+      <li><a class="nav-link" href="education.html">Education</a></li>
+      <li><a class="nav-link" href="experience.html">Experience</a></li>
+      <li><a class="nav-link" href="service.html">Service</a></li>
+      <li><a class="nav-link" href="skills.html">Skills</a></li>
+    </ul>
+    <div class="nav-social">
+      <a href="https://scholar.google.com/citations?user=BQ0WKs8AAAAJ" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+      <a href="https://github.com/anandojha" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/aaojha" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://orcid.org/0000-0001-6588-3092" target="_blank" title="ORCID"><i class="fab fa-orcid"></i></a>
+      <a href="mailto:anandojha.002@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+    <button class="nav-toggle" aria-label="menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile">
+  <a class="nav-link" href="index.html">Home</a>
+  <a class="nav-link" href="publications.html">Publications</a>
+  <a class="nav-link active" href="talks.html">Talks</a>
+  <a class="nav-link" href="awards.html">Awards</a>
+  <a class="nav-link" href="education.html">Education</a>
+  <a class="nav-link" href="experience.html">Experience</a>
+  <a class="nav-link" href="service.html">Service</a>
+  <a class="nav-link" href="skills.html">Skills</a>
+</div>
+
+<header class="page-header">
+  <div class="container">
+    <div class="page-header-inner">
+      <div>
+        <h1>Invited Talks  &amp; Seminars</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <div class="talks-timeline reveal">
+
+      <div class="talk-card">
+        <div class="talk-date-col"><div class="talk-day">22</div><div class="talk-mon">March</div><div class="talk-yr">2026</div></div>
+        <div class="talk-body">
+          <div class="talk-title">Rethinking sampling in protein ensembles: Deep-learned latent manifolds and Bayesian reweighting for cryo-EM-guided protein ensembles</div>
+          <div class="talk-venue">American Chemical Society Spring 2026 National Meeting</div>
+          <div class="talk-loc"><i class="fas fa-location-dot"></i> Atlanta, Georgia, United States</div>
+        </div>
+      </div>
+
+      <div class="talk-card">
+        <div class="talk-date-col"><div class="talk-day">22</div><div class="talk-mon">March</div><div class="talk-yr">2026</div></div>
+        <div class="talk-body">
+          <div class="talk-title">seekrflow: Accelerating and automating high-throughput drug discovery with multiscale simulations and AI-driven force fields</div>
+          <div class="talk-venue">American Chemical Society Spring 2026 National Meeting</div>
+          <div class="talk-loc"><i class="fas fa-location-dot"></i> Atlanta, Georgia, United States</div>
+        </div>
+      </div>
+
+      <div class="talk-card">
+        <div class="talk-date-col"><div class="talk-day">16</div><div class="talk-mon">March</div><div class="talk-yr">2026</div></div>
+        <div class="talk-body">
+          <div class="talk-title">Beyond the snapshot: From protein dynamics to drug discovery across scales</div>
+          <div class="talk-venue">Department of Chemistry, University of Georgia</div>
+          <div class="talk-loc"><i class="fas fa-location-dot"></i> Athens, Georgia, United States</div>
+        </div>
+      </div>
+
+      <div class="talk-card">
+        <div class="talk-date-col"><div class="talk-day">2</div><div class="talk-mon">March</div><div class="talk-yr">2026</div></div>
+        <div class="talk-body">
+          <div class="talk-title">Beyond the snapshot: From protein dynamics to drug discovery across scales</div>
+          <div class="talk-venue">Giersch International Conference &amp; SCALE Kick-Off, Frankfurt Institute for Advanced Studies</div>
+          <div class="talk-loc"><i class="fas fa-location-dot"></i> Frankfurt am Main, Germany</div>
+        </div>
+      </div>
+
+      <div class="talk-card">
+        <div class="talk-date-col"><div class="talk-day">26</div><div class="talk-mon">February</div><div class="talk-yr">2026</div></div>
+        <div class="talk-body">
+          <div class="talk-title">Beyond the snapshot: From protein dynamics to drug discovery across scales</div>
+          <div class="talk-venue">Department of Biological Sciences, Purdue University</div>
+          <div class="talk-loc"><i class="fas fa-location-dot"></i> West Lafayette, Indiana, United States</div>
+        </div>
+      </div>
+
+      <div class="talk-card">
+        <div class="talk-date-col"><div class="talk-day">12</div><div class="talk-mon">February</div><div class="talk-yr">2026</div></div>
+        <div class="talk-body">
+          <div class="talk-title">Beyond the snapshot: Multiscale methods for proteins in motion</div>
+          <div class="talk-venue">School of Pharmacy, University of California San Francisco</div>
+          <div class="talk-loc"><i class="fas fa-location-dot"></i> San Francisco, California, United States</div>
+        </div>
+      </div>
+
+      <div class="talk-card">
+        <div class="talk-date-col"><div class="talk-day">6</div><div class="talk-mon">February</div><div class="talk-yr">2026</div></div>
+        <div class="talk-body">
+          <div class="talk-title">Beyond the snapshot: Multiscale methods for proteins in motion</div>
+          <div class="talk-venue">School of Physics and Astronomy, Rochester Institute of Technology</div>
+          <div class="talk-loc"><i class="fas fa-location-dot"></i> Rochester, New York, United States</div>
+        </div>
+      </div>
+
+      <div class="talk-card">
+        <div class="talk-date-col"><div class="talk-day">13</div><div class="talk-mon">January</div><div class="talk-yr">2026</div></div>
+        <div class="talk-body">
+          <div class="talk-title">Statistical architectures for integrating experiments and simulations across biomolecular scales</div>
+          <div class="talk-venue">Department of Chemistry and Biochemistry, Ohio State University</div>
+          <div class="talk-loc"><i class="fas fa-location-dot"></i> Columbus, Ohio, United States</div>
+        </div>
+      </div>
+
+      <div class="talk-card">
+        <div class="talk-date-col"><div class="talk-day">10</div><div class="talk-mon">November</div><div class="talk-yr">2025</div></div>
+        <div class="talk-body">
+          <div class="talk-title">Geometry, Probability, and Kinetics: Data-guided strategies for interpreting biomolecular mechanisms</div>
+          <div class="talk-venue">Center for Molecular Biophysics, Oak Ridge National Laboratory</div>
+          <div class="talk-loc"><i class="fas fa-location-dot"></i> Oak Ridge, Tennessee, United States</div>
+        </div>
+      </div>
+
+      <div class="talk-card">
+        <div class="talk-date-col"><div class="talk-day">7</div><div class="talk-mon">May</div><div class="talk-yr">2025</div></div>
+        <div class="talk-body">
+          <div class="talk-title">Automated multiscale milestoning simulation pipeline integrating machine-learned force fields for accelerated drug-target kinetic predictions</div>
+          <div class="talk-venue">Workshop on Free Energy Methods in Drug Design, Merck Research Laboratories</div>
+          <div class="talk-loc"><i class="fas fa-location-dot"></i> Boston, Massachusetts, United States</div>
+        </div>
+      </div>
+
+      <div class="talk-card">
+        <div class="talk-date-col"><div class="talk-day">12</div><div class="talk-mon">April</div><div class="talk-yr">2025</div></div>
+        <div class="talk-body">
+          <div class="talk-title">Automated multiscale milestoning simulation pipeline integrating machine-learned force fields for accelerated drug-target kinetic predictions</div>
+          <div class="talk-venue">ASBMB 2025 Emerging Investigator Seminar</div>
+          <div class="talk-loc"><i class="fas fa-location-dot"></i> Chicago, Illinois, United States</div>
+        </div>
+      </div>
+
+      <div class="talk-card">
+        <div class="talk-date-col"><div class="talk-day">18</div><div class="talk-mon">February</div><div class="talk-yr">2025</div></div>
+        <div class="talk-body">
+          <div class="talk-title">Creating 3D movies from 2D cryo-EM snapshots: Bridging deep learning-based cryo-EM image analysis with simulations for protein conformational dynamics</div>
+          <div class="talk-venue">Biophysical Society 69th Annual Meeting</div>
+          <div class="talk-loc"><i class="fas fa-location-dot"></i> Los Angeles, California, United States</div>
+        </div>
+      </div>
+
+      <div class="talk-card">
+        <div class="talk-date-col"><div class="talk-day">30</div><div class="talk-mon">January</div><div class="talk-yr">2025</div></div>
+        <div class="talk-body">
+          <div class="talk-title">Next-generation multiscale computational frameworks integrating quantum mechanics, molecular simulations, Brownian dynamics, and cryo-EM for AI-driven drug discovery</div>
+          <div class="talk-venue">Department of Pharmaceutical Sciences, University of Michigan</div>
+          <div class="talk-loc"><i class="fas fa-location-dot"></i> Ann Arbor, Michigan, United States</div>
+        </div>
+      </div>
+
+      <div class="talk-card">
+        <div class="talk-date-col"><div class="talk-day">18</div><div class="talk-mon">March</div><div class="talk-yr">2024</div></div>
+        <div class="talk-body">
+          <div class="talk-title">Advancements and challenges in multiscale milestoning methods for efficient and accurate prediction of biomolecular kinetics</div>
+          <div class="talk-venue">American Chemical Society Spring 2024 National Meeting</div>
+          <div class="talk-loc"><i class="fas fa-location-dot"></i> New Orleans, Louisiana, United States</div>
+        </div>
+      </div>
+
+      <div class="talk-card">
+        <div class="talk-date-col"><div class="talk-day">16</div><div class="talk-mon">August</div><div class="talk-yr">2023</div></div>
+        <div class="talk-body">
+          <div class="talk-title">Overcoming limitations in receptor-ligand (un)binding kinetic predictions by integrating quantum mechanics, molecular dynamics, and Brownian dynamics</div>
+          <div class="talk-venue">American Chemical Society Fall 2023 National Meeting</div>
+          <div class="talk-loc"><i class="fas fa-location-dot"></i> San Francisco, California, United States</div>
+        </div>
+      </div>
+
+      <div class="talk-card">
+        <div class="talk-date-col"><div class="talk-day">13</div><div class="talk-mon">August</div><div class="talk-yr">2023</div></div>
+        <div class="talk-body">
+          <div class="talk-title">Enhancing sampling efficiency in molecular simulations: Hybrid methods combining Gaussian-accelerated MD, weighted ensemble simulations, and deep learning</div>
+          <div class="talk-venue">American Chemical Society Fall 2023 National Meeting</div>
+          <div class="talk-loc"><i class="fas fa-location-dot"></i> San Francisco, California, United States</div>
+        </div>
+      </div>
+
+      <div class="talk-card">
+        <div class="talk-date-col"><div class="talk-day">22</div><div class="talk-mon">August</div><div class="talk-yr">2022</div></div>
+        <div class="talk-body">
+          <div class="talk-title">Multiscale milestoning simulations with Voronoi tessellations to decipher selectivity and ranking among JAK-STAT inhibitors with extended residence time</div>
+          <div class="talk-venue">American Chemical Society Fall 2022 National Meeting</div>
+          <div class="talk-loc"><i class="fas fa-location-dot"></i> Chicago, Illinois, United States</div>
+        </div>
+      </div>
+
+      <div class="talk-card">
+        <div class="talk-date-col"><div class="talk-day">27</div><div class="talk-mon">April</div><div class="talk-yr">2022</div></div>
+        <div class="talk-body">
+          <div class="talk-title">Deep learning of kinetic models with the Weighted Ensemble Simulation Toolkit for enhanced sampling</div>
+          <div class="talk-venue">WESTPA Developer’s Meeting, University of Pittsburgh</div>
+          <div class="talk-loc"><i class="fas fa-location-dot"></i> Pittsburgh, Pennsylvania, United States</div>
+        </div>
+      </div>
+
+      <div class="talk-card">
+        <div class="talk-date-col"><div class="talk-day">8</div><div class="talk-mon">December</div><div class="talk-yr">2021</div></div>
+        <div class="talk-body">
+          <div class="talk-title">Gaussian-accelerated molecular dynamics with the weighted ensemble method to improve thermodynamic and kinetic sampling</div>
+          <div class="talk-venue">WESTPA Developer’s Meeting, University of Pittsburgh</div>
+          <div class="talk-loc"><i class="fas fa-location-dot"></i> Pittsburgh, Pennsylvania, United States</div>
+        </div>
+      </div>
+
+      <div class="talk-card">
+        <div class="talk-date-col"><div class="talk-day">10</div><div class="talk-mon">November</div><div class="talk-yr">2021</div></div>
+        <div class="talk-body">
+          <div class="talk-title">Enhanced sampling approaches to gain insights into receptor-ligand binding and unbinding kinetics</div>
+          <div class="talk-venue">Student Research Seminar, University of California San Diego</div>
+          <div class="talk-loc"><i class="fas fa-location-dot"></i> La Jolla, California, United States</div>
+        </div>
+      </div>
+
+      <div class="talk-card">
+        <div class="talk-date-col"><div class="talk-day">25</div><div class="talk-mon">August</div><div class="talk-yr">2021</div></div>
+        <div class="talk-body">
+          <div class="talk-title">Multiscale milestoning simulation approach for efficient protein-ligand (un)binding kinetics: Adding a quantum mechanical approach to reparameterize the bound state</div>
+          <div class="talk-venue">American Chemical Society Fall 2021 National Meeting</div>
+          <div class="talk-loc"><i class="fas fa-location-dot"></i> Atlanta, Georgia, United States</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">Anupam Anand <em>Ojha</em>, Ph.D.</div>
+      <div class="footer-sub">Flatiron Research Fellow · Flatiron Institute · New York · © 2026</div>
+    </div>
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="publications.html">Publications</a>
+      <a href="talks.html">Talks</a>
+      <a href="awards.html">Awards</a>
+      <a href="education.html">Education</a>
+      <a href="experience.html">Experience</a>
+      <a href="service.html">Service</a>
+      <a href="skills.html">Skills</a>
+    </nav>
+  </div>
+</footer>
+<script src="nav.js"></script>
+</body>
+</html>

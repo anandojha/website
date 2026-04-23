@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Experience — Anupam Anand Ojha</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <style>
+    /* Match section-title font to publications page */
+    .cv-block-title {
+      font-size: 1.15rem !important;
+      letter-spacing: .12em !important;
+      padding-bottom: .5rem !important;
+      margin-bottom: 1.4rem !important;
+    }
+    /* Override: left-align both date lines */
+    .tl-date {
+      text-align: left !important;
+      line-height: 1.5 !important;
+      font-size: 0.88rem !important;
+      color: var(--ink-mid) !important;
+      font-weight: 500 !important;
+      font-family: 'Source Serif 4', Georgia, serif !important;
+    }
+    /* Vertically center the date within its row */
+    .tl-item {
+      align-items: center !important;
+      grid-template-columns: 200px 1fr !important;
+    }
+    /* Reduce white space between page header and first content section */
+    .page-header {
+      padding-bottom: 12px !important;
+    }
+    .section {
+      padding-top: 20px !important;
+      border-top: none !important;
+    }
+    /* Darken bullet text for better readability */
+    .tl-bullets li {
+      color: var(--ink-mid) !important;
+    }
+    /* MOBILE: stack date above content for readability on phones */
+    @media (max-width: 768px) {
+      .tl-item {
+        grid-template-columns: 1fr !important;
+        gap: 0.4rem !important;
+        align-items: start !important;
+      }
+      .tl-date {
+        font-size: 0.95rem !important;
+      }
+      .tl-date br {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <ul class="nav-links">
+      <li><a class="nav-link" href="index.html">Home</a></li>
+      <li><a class="nav-link" href="publications.html">Publications</a></li>
+      <li><a class="nav-link" href="talks.html">Talks</a></li>
+      <li><a class="nav-link" href="awards.html">Awards</a></li>
+      <li><a class="nav-link" href="education.html">Education</a></li>
+      <li><a class="nav-link active" href="experience.html">Experience</a></li>
+      <li><a class="nav-link" href="service.html">Service</a></li>
+      <li><a class="nav-link" href="skills.html">Skills</a></li>
+    </ul>
+    <div class="nav-social">
+      <a href="https://scholar.google.com/citations?user=BQ0WKs8AAAAJ" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+      <a href="https://github.com/anandojha" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/aaojha" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://orcid.org/0000-0001-6588-3092" target="_blank" title="ORCID"><i class="fab fa-orcid"></i></a>
+      <a href="mailto:anandojha.002@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+    <button class="nav-toggle" aria-label="menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile">
+  <a class="nav-link" href="index.html">Home</a>
+  <a class="nav-link" href="publications.html">Publications</a>
+  <a class="nav-link" href="talks.html">Talks</a>
+  <a class="nav-link" href="awards.html">Awards</a>
+  <a class="nav-link" href="education.html">Education</a>
+  <a class="nav-link active" href="experience.html">Experience</a>
+  <a class="nav-link" href="service.html">Service</a>
+  <a class="nav-link" href="skills.html">Skills</a>
+</div>
+
+<header class="page-header">
+  <div class="container">
+    <div class="page-header-inner">
+      <div>
+        <h1>Experience</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <div class="cv-main reveal">
+
+      <!-- POSTDOCTORAL -->
+      <div class="cv-block">
+        <div class="cv-block-title">Postdoctoral Research Experience</div>
+        <div class="tl">
+          <div class="tl-item">
+            <div class="tl-date">September 2024 –<br>Present</div>
+            <div>
+              <div class="tl-role">Flatiron Research Fellow</div>
+              <div class="tl-org">Center for Computational Biology &amp; Center for Computational Mathematics, Flatiron Institute, New York, New York, United States</div>
+              <ul class="tl-bullets">
+                <li>Developed <em>cryoWEight</em>, a maximum-entropy reweighting framework that biases molecular dynamics ensembles toward cryo-electron microscopy distributions to recover experimentally validated conformational landscapes and kinetics.</li>
+                <li>Developed <em>ManifoldEM</em>, a geometric machine-learning approach to infer reaction coordinates and free-energy landscapes directly from single-particle cryo-electron microscopy images without prior structural models.</li>
+                <li>Developed <em>seekrflow</em>, a fully automated multiscale milestoning pipeline integrating machine-learned force fields and enhanced sampling for high-throughput prediction of drug-target residence times, binding kinetics, and free energies.</li>
+                <li>Designed stable hinge proteins with conformational switching for therapeutic applications using multiscale simulations.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- INDUSTRY -->
+      <div class="cv-block">
+        <div class="cv-block-title">Industry Research Experience</div>
+        <div class="tl">
+          <div class="tl-item">
+            <div class="tl-date">June 2023 –<br>Present</div>
+            <div>
+              <div class="tl-role">Collaborative Researcher</div>
+              <div class="tl-org">Janssen Research &amp; Development (Johnson &amp; Johnson), La Jolla, California, United States</div>
+              <ul class="tl-bullets">
+                <li>Developed a thermodynamic-kinetic metric using deep learning and multiscale kinetics to predict PROTAC permeability and residence times in quaternary complexes across multiple solvents.</li>
+                <li>Improved binding-kinetics predictions for kinase targets via multiscale simulations, accelerating residence-time-driven hit-to-lead optimization across multiple therapeutic targets.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-date">June 2024 –<br>September 2024</div>
+            <div>
+              <div class="tl-role">Multiscale Modeling Scientist Intern</div>
+              <div class="tl-org">Genentech, Inc., South San Francisco, California, United States</div>
+              <ul class="tl-bullets">
+                <li>Developed AI-enhanced multiscale molecular and Brownian dynamics simulations to estimate protein-protein kinetics.</li>
+                <li>Developed an end-to-end computational workflow to streamline multiscale simulations for kinetic pathway modeling.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-date">June 2023 –<br>August 2023</div>
+            <div>
+              <div class="tl-role">Computer-Aided Drug Design Intern</div>
+              <div class="tl-org">Janssen Research &amp; Development (Johnson &amp; Johnson), La Jolla, California, United States</div>
+              <ul class="tl-bullets">
+                <li>Employed deep learning and enhanced sampling to determine permeability and rank ordering of protein degraders.</li>
+                <li>Developed an end-to-end Python workflow for blind permeability predictions of beyond-rule-of-five protein degraders.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-date">June 2022 –<br>September 2022</div>
+            <div>
+              <div class="tl-role">Research &amp; Early Development Intern</div>
+              <div class="tl-org">Genentech, Inc., South San Francisco, California, United States</div>
+              <ul class="tl-bullets">
+                <li>Employed MSM and enhanced sampling to estimate transition rates of protein degraders between metastable states.</li>
+                <li>Developed an end-to-end Python framework to generate customizable force field parameters for protein degraders.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PHD -->
+      <div class="cv-block">
+        <div class="cv-block-title">Doctoral Research Experience</div>
+        <div class="tl">
+          <div class="tl-item">
+            <div class="tl-date">November 2019 –<br>June 2024</div>
+            <div>
+              <div class="tl-role">Doctoral Researcher</div>
+              <div class="tl-org">Department of Chemistry &amp; Biochemistry, University of California San Diego, La Jolla, California, United States</div>
+              <p style="font-size:.8rem;color:var(--ink-mid);margin:.4rem 0 .8rem;line-height:1.6">Published 12 research publications with 7 first-author publications showcasing distinctive scientific understanding.</p>
+
+              <div style="font-family:'DM Mono',monospace;font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--forest-mid);margin-top:.6rem;margin-bottom:.4rem">Method and software development</div>
+              <ul class="tl-bullets">
+                <li>Developed milestoning simulations with dissipation-corrected targeted MD to estimate accurate drug-target residence times.</li>
+                <li>Developed <em>seekr</em>, a multiscale milestoning software with Voronoi tessellations, enabling 10-fold faster drug-target (un)binding kinetics predictions across multiple therapeutic targets for accelerated drug discovery campaigns.</li>
+                <li>Developed <em>QMrebind</em>, a QM-MM reparameterization tool for accurate and efficient drug-residence time estimates via multiscale milestoning.</li>
+                <li>Developed <em>GaMD-WE</em>, a hybrid GaMD and weighted ensemble simulation protocol for 2-fold faster sampling of biomolecular kinetics and thermodynamics.</li>
+                <li>Developed <em>DeepWEST</em>, combining deep learning, MSMs, and WE simulations for improved biomolecular kinetics.</li>
+                <li>Employed chemoinformatics and machine learning to identify 8 physicochemical properties differentiating OATP- and OAT-transported drugs for informed drug selection.</li>
+              </ul>
+
+              <div style="font-family:'DM Mono',monospace;font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--forest-mid);margin-top:.9rem;margin-bottom:.4rem">Multiscale simulations of biomolecular complexes</div>
+              <ul class="tl-bullets">
+                <li>Elucidated JAK2/JAK3 inhibitor selectivity and rank-ordered 8 inhibitors by residence time via multiscale milestoning.</li>
+                <li>Investigated allosteric effects of 5 disease-associated LRRK2 mutations using GaMD and WE simulations for therapeutic insights.</li>
+                <li>Identified SARS-CoV-2 spike protein stabilizing mutations via WE simulations for improved immunogen design.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- UNDERGRADUATE -->
+      <div class="cv-block">
+        <div class="cv-block-title">Undergraduate Research Experience</div>
+        <div class="tl">
+          <div class="tl-item">
+            <div class="tl-date">September 2018 –<br>July 2019</div>
+            <div>
+              <div class="tl-role">Research Assistant</div>
+              <div class="tl-org">Centre for Nano and Material Science, Jain University, Bengaluru, Karnataka, India</div>
+              <ul class="tl-bullets">
+                <li>Conducted ab-initio electronic structure calculations (Density Functional Theory and Hartree-Fock) in ORCA simulation engine to characterize colorimetric chemosensor to determine copper selectivity.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-date">August 2017 –<br>August 2018</div>
+            <div>
+              <div class="tl-role">Research Assistant</div>
+              <div class="tl-org">Department of Chemistry, ETH Zürich, Zürich, Switzerland</div>
+              <ul class="tl-bullets">
+                <li>Developed a Python workflow to compute concerted hydrogen transfer rates in water clusters (3-10 molecules) using ring-polymer instanton theory.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-date">August 2016 –<br>April 2017</div>
+            <div>
+              <div class="tl-role">Master's Thesis Research</div>
+              <div class="tl-org">Department of Chemistry, Indian Institute of Science Education and Research Thiruvananthapuram, Thiruvananthapuram, Kerala, India</div>
+              <ul class="tl-bullets">
+                <li>Performed ab-initio calculations in Gaussian to estimate binding free energies and rank-order analytes interacting with MOFs.</li>
+                <li>Employed DFT calculations in VASP to compute interaction energies of glyphosate molecules with zirconium-based MOFs.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-date">May 2016 –<br>July 2016</div>
+            <div>
+              <div class="tl-role">Research Intern</div>
+              <div class="tl-org">Center for Multidimensional Carbon Materials, Institute for Basic Science, Ulsan, South Korea</div>
+              <ul class="tl-bullets">
+                <li>Performed hybrid-functional DFT and nudged elastic band calculations in Quantum ESPRESSO to compute activation-energy barriers for hydrogen diffusion on noble-metal surfaces.</li>
+                <li>Performed molecular dynamics and adsorption simulations to calculate alkane binding energies on metal surfaces.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-date">May 2015 –<br>July 2015</div>
+            <div>
+              <div class="tl-role">Research Intern</div>
+              <div class="tl-org">Department of Chemistry, Indian Institute of Technology Kharagpur, Kharagpur, West Bengal, India</div>
+              <ul class="tl-bullets">
+                <li>Performed QM/MM MD simulations in NAMD to elucidate substrate binding and the catalytic mechanism of DapE with transition-metal centers.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-date">May 2014 –<br>July 2014<br>&amp;<br>May 2013 –<br>July 2013</div>
+            <div>
+              <div class="tl-role">Summer Research Intern</div>
+              <div class="tl-org">Department of Chemistry, Indian Association for the Cultivation of Science, Kolkata, West Bengal, India</div>
+              <ul class="tl-bullets">
+                <li>Employed DFT and HF calculations in Gaussian to investigate quantum tunneling phenomena in N-heterocyclic carbenes.</li>
+                <li>Employed QM calculations in Gaussian and ORCA to quantify cyclooctatetraene interactions on noble metal surfaces.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">Anupam Anand <em>Ojha</em>, Ph.D.</div>
+      <div class="footer-sub">Flatiron Research Fellow · Flatiron Institute · New York · © 2026</div>
+    </div>
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="publications.html">Publications</a>
+      <a href="talks.html">Talks</a>
+      <a href="awards.html">Awards</a>
+      <a href="education.html">Education</a>
+      <a href="experience.html">Experience</a>
+      <a href="service.html">Service</a>
+      <a href="skills.html">Skills</a>
+    </nav>
+  </div>
+</footer>
+<script src="nav.js"></script>
+</body>
+</html>
