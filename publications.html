@@ -81,30 +81,53 @@
       color: var(--ink-mid) !important;
     }
 
-    /* Graphical abstract image banner (full-width, above card content) */
+    /* Graphical abstract column — image on top, DOI at the bottom */
+    .pub-card.has-image {
+      grid-template-columns: 3rem 1fr 260px;
+    }
+    .pub-image-col {
+      display: flex;
+      flex-direction: column;
+      border-left: 1px solid var(--card-border);
+      padding: 0.9rem;
+      gap: 0.6rem;
+      min-height: 200px;
+    }
     .pub-image-link {
-      grid-column: 1 / -1;
       display: block;
-      width: 100%;
-      background: var(--paper);
-      border-bottom: 1px solid var(--card-border);
-      line-height: 0;
+      flex: 1;
+      min-height: 0;
       overflow: hidden;
+      line-height: 0;
+      background: var(--paper);
     }
     .pub-image {
       width: 100%;
-      height: 280px;
+      height: 100%;
       object-fit: contain;
       display: block;
-      transition: transform .35s ease, opacity .2s ease;
+      transition: transform .3s ease, opacity .2s ease;
     }
     .pub-image-link:hover .pub-image {
       transform: scale(1.015);
       opacity: 0.95;
     }
+    .pub-doi-col {
+      margin-left: 0;
+    }
     @media (max-width: 720px) {
-      .pub-image {
+      .pub-card.has-image {
+        grid-template-columns: 3rem 1fr;
+      }
+      .pub-image-col {
+        grid-column: 1 / -1;
+        border-left: none;
+        border-top: 1px solid var(--card-border);
+        min-height: auto;
+      }
+      .pub-image-link {
         height: 180px;
+        flex: none;
       }
     }
   </style>
@@ -203,10 +226,7 @@
         </div>
       </div>
 
-      <div class="pub-card">
-        <a class="pub-image-link" href="https://doi.org/10.1101/2025.08.13.669965" target="_blank" aria-label="seekrflow graphical abstract — open article">
-          <img class="pub-image" src="images/seekrflow.png" alt="Graphical abstract: seekrflow"/>
-        </a>
+      <div class="pub-card has-image">
         <div class="pub-spine">bioRxiv</div>
         <div class="pub-body">
           <div class="pub-title"><a href="https://doi.org/10.1101/2025.08.13.669965" target="_blank" style="color:inherit;text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s" onmouseover="this.style.borderColor='var(--sage-light)'" onmouseout="this.style.borderColor='transparent'">seekrflow: Towards an end-to-end automated simulation pipeline with machine-learned force field for accelerated drug-target kinetic and thermodynamic predictions</a></div>
@@ -214,8 +234,13 @@
           <div class="pub-meta">
             <span class="pub-tag tag-biorxiv">bioRxiv · Cold Spring Harbor Laboratory</span>
             <span class="pub-journal">July 2025</span>
-            <a class="pub-doi" href="https://doi.org/10.1101/2025.08.13.669965" target="_blank"><i class="fas fa-external-link-alt"></i> 10.1101/2025.08.13.669965</a>
           </div>
+        </div>
+        <div class="pub-image-col">
+          <a class="pub-image-link" href="https://doi.org/10.1101/2025.08.13.669965" target="_blank" aria-label="seekrflow graphical abstract — open article">
+            <img class="pub-image" src="images/seekrflow.png" alt="Graphical abstract: seekrflow"/>
+          </a>
+          <a class="pub-doi pub-doi-col" href="https://doi.org/10.1101/2025.08.13.669965" target="_blank"><i class="fas fa-external-link-alt"></i> 10.1101/2025.08.13.669965</a>
         </div>
       </div>
 
