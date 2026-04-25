@@ -81,9 +81,22 @@
       color: var(--ink-mid) !important;
     }
 
+    /* Wider default spine column to accommodate longer labels */
+    .pub-card {
+      grid-template-columns: 4rem 1fr;
+    }
+
     /* Graphical abstract column — image on top, DOI at the bottom */
     .pub-card.has-image {
-      grid-template-columns: 3rem 1fr 260px;
+      grid-template-columns: 6rem 1fr 320px;
+    }
+    .pub-card.has-image .pub-spine {
+      writing-mode: horizontal-tb;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      padding: 1rem 0.5rem;
+      text-align: center;
+      color: rgba(255,255,255,0.85);
     }
     .pub-image-col {
       display: flex;
@@ -209,7 +222,7 @@
     <div class="pub-list reveal">
 
       <div class="pub-card">
-        <div class="pub-spine">In Prep</div>
+        <div class="pub-spine">In Preparation</div>
         <div class="pub-body">
           <div class="pub-title">PySTARC: GPU-accelerated Brownian dynamics for bimolecular association rate constants</div>
           <div class="pub-authors"><strong>Anupam Ojha</strong></div>
@@ -218,7 +231,7 @@
       </div>
 
       <div class="pub-card">
-        <div class="pub-spine">In Prep</div>
+        <div class="pub-spine">In Preparation</div>
         <div class="pub-body">
           <div class="pub-title">cryoWEight: An automated framework for iterative ensemble cryo-EM-guided reweighting for biomolecular complexes</div>
           <div class="pub-authors"><strong>Anupam Ojha</strong>, Praveen Ranganath Prabhakar, Ioan Andricioaei, Pilar Cossio, and Sonya Hanson</div>
@@ -358,7 +371,7 @@
     <div class="pub-list reveal">
 
       <div class="pub-card">
-        <div class="pub-spine">In Prep</div>
+        <div class="pub-spine">In Preparation</div>
         <div class="pub-body">
           <div class="pub-title">Deep learning algorithms identify CD27 mutations with improved predicted CD70 binding</div>
           <div class="pub-authors">Amrik Kang, <strong>Anupam Ojha</strong>, Radhika Dalal, Sonya Hanson, Pilar Cossio, and Arun Wiita</div>
@@ -367,7 +380,7 @@
       </div>
 
       <div class="pub-card">
-        <div class="pub-spine">In Prep</div>
+        <div class="pub-spine">In Preparation</div>
         <div class="pub-body">
           <div class="pub-title">Considering excellence in the chemical sciences: Lessons from first-generation chemists</div>
           <div class="pub-authors">Robert A. Ives, David N. Azulay, Adam Cook, Mamta Dagar, Douglas J. Fansher, Roshan Keshari, <strong>Anupam Anand Ojha</strong>, Shivani Patel, Christian Sandoval-Pauker, Nitesh Sanghai, Brittany Trinh, Vishal Yadav, and Zhiling Zhang</div>
