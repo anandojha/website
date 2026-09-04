@@ -195,6 +195,7 @@ h1,h2,h3,h4{font-family:'Playfair Display',Georgia,serif;line-height:1.15;color:
 .tag-mdpi   {background:#f0eafb;color:#6b35a8;border:1px solid #d8c0f5}
 .tag-biorxiv{background:#fef3e2;color:#9e5a0a;border:1px solid #f5d8a0}
 .tag-arxiv  {background:#fdecea;color:#9e2a2a;border:1px solid #f5c5c0}
+.tag-aps    {background:#eef2fb;color:#33488f;border:1px solid #c8d3f0}
 .tag-iucr   {background:#eafaf1;color:#1a7a45;border:1px solid #b0e8c5}
 .tag-livecoms{background:#e8faf0;color:#1a7a55;border:1px solid #a0e0c0}
 .tag-elsevier{background:#fff3e0;color:#9e5500;border:1px solid #f5cfa0}
