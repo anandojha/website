@@ -39,6 +39,9 @@ document.querySelectorAll('iframe').forEach(function(f){
       for (var k in base) r.setProperty(k, base[k]);
       d.body.style.background = '#16181a';
       d.body.style.color = '#f0efe9';
+      var s = d.createElement('style');
+      s.textContent = '.nav{background:rgba(22,24,26,.95)!important;border-bottom-color:#2b2f33!important}.footer{background:#101214!important;color:rgba(255,255,255,.6)!important;border-top:1px solid #2b2f33}';
+      d.head.appendChild(s);
     }catch(e){}
   });
 });
