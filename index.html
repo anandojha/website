@@ -115,6 +115,19 @@
       vertical-align: middle;
       height: 2.8rem;
     }
+
+    /* Visitor map under the counter, same width as the badge, no pageview text */
+    .visitor-map {
+      width: 244px;
+      margin: 0.5rem auto 0;
+    }
+    .visitor-map #mapmyvisitors-widget {
+      min-height: 0;
+    }
+    .visitor-map .mapmyvisitors-visitors,
+    .visitor-map .mapmyvisitors-date {
+      display: none !important;
+    }
   </style>
 </head>
 <body>
@@ -317,6 +330,11 @@
   <!-- VISITOR COUNTER -->
   <div class="visitor-counter">
     <img src="https://hits.sh/anandojha.github.io.svg?label=Visitors&style=for-the-badge&color=1a1a18&labelColor=2d6a4f" alt="visitor count"/>
+  </div>
+
+  <!-- VISITOR MAP -->
+  <div class="visitor-map">
+    <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=OlW6_i1-s3nuKLW8TjtcwDsl59h62olLHrQFgSX9rQ0&cl=ffffff&w=a"></script>
   </div>
 
 </div>
